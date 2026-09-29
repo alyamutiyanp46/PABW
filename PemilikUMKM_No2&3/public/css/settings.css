@@ -1,0 +1,79 @@
+/* Settings / Akun CSS */
+.set-bg { background: #F9FAFB; min-height: 100vh; position: relative; }
+.set-header { padding: 24px 24px 16px; }
+.set-title { font-size: 20px; font-weight: 700; color: #111827; }
+
+.set-profile-card {
+  margin: 0 24px 24px;
+  background: linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%);
+  border-radius: 24px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.set-profile-card::before {
+  content: ""; position: absolute; width: 150px; height: 150px;
+  background: rgba(255,255,255,0.1); border-radius: 50%;
+  top: -50px; right: -50px;
+}
+.set-profile-card::after {
+  content: ""; position: absolute; width: 200px; height: 200px;
+  background: rgba(0,0,0,0.05); border-radius: 50%;
+  bottom: -80px; left: -80px;
+}
+.set-profile-top { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; position: relative; z-index: 2; }
+.set-avatar {
+  width: 60px; height: 60px; background: white; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; font-weight: 800; color: #2563EB;
+}
+.set-profile-info { flex: 1; color: white; }
+.set-profile-name { font-size: 18px; font-weight: 700; margin-bottom: 2px; }
+.set-profile-role { font-size: 12px; color: rgba(255,255,255,0.8); margin-bottom: 8px; }
+.set-profile-premium { display: flex; align-items: center; gap: 8px; }
+.premium-badge { background: #F59E0B; color: white; padding: 2px 8px; border-radius: 12px; font-size: 10px; font-weight: 700; }
+.premium-date { font-size: 10px; color: rgba(255,255,255,0.8); }
+.set-edit-btn {
+  width: 32px; height: 32px; background: rgba(255,255,255,0.2); border: none;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;
+}
+
+.set-profile-stats { display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px; position: relative; z-index: 2; }
+.set-stat-item { text-align: center; flex: 1; }
+.set-stat-val { color: white; font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.set-stat-label { color: rgba(255,255,255,0.7); font-size: 10px; }
+
+.set-section { margin-bottom: 24px; }
+.set-section-title { font-size: 11px; font-weight: 700; color: #9CA3AF; margin: 0 24px 12px; letter-spacing: 0.5px; }
+.set-list-card { background: white; border-radius: 20px; margin: 0 24px; padding: 8px 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+.set-list-item { display: flex; align-items: center; gap: 16px; padding: 12px 0; border-bottom: 1px solid #F3F4F6; }
+.set-list-item:last-child { border-bottom: none; }
+.set-list-icon-wrapper {
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.set-list-icon-wrapper.bg-blue-light { background: #EFF6FF; }
+.set-list-icon-wrapper.bg-green-light { background: #ECFDF5; }
+.set-list-icon-wrapper.bg-indigo-light { background: #EEF2FF; }
+.set-list-icon-wrapper.bg-gray-light { background: #F3F4F6; }
+.set-list-content { flex: 1; }
+.set-list-name { font-size: 14px; font-weight: 600; color: #111827; margin-bottom: 2px; }
+.set-list-sub { font-size: 12px; color: #6B7280; }
+
+.set-toggle {
+  width: 44px; height: 24px; background: #D1D5DB; border-radius: 12px;
+  position: relative; cursor: pointer; transition: 0.3s;
+}
+.set-toggle.active { background: #2563EB; }
+.set-toggle-circle {
+  width: 20px; height: 20px; background: white; border-radius: 50%;
+  position: absolute; top: 2px; left: 2px; transition: 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.set-toggle.active .set-toggle-circle { left: 22px; }
+
+.set-logout-btn {
+  width: calc(100% - 48px); margin: 0 24px; padding: 16px; background: #FEF2F2;
+  border-radius: 16px; border: none; font-size: 14px; font-weight: 600; color: #EF4444;
+  display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer;
+}
