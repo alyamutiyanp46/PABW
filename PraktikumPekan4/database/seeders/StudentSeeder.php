@@ -14,7 +14,7 @@ class StudentSeeder extends Seeder
      */
     public function run(): void
     {
-        $faker = Faker::create('id_ID');
+        $faker = Faker::create('id_KR');
 
         for ($i = 0; $i < 20; $i++) {
             DB::table('mahasiswa')->insert([
